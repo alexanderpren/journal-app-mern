@@ -1,7 +1,8 @@
 import { getAuth } from "firebase/auth"
 import { getFirestore } from "firebase/firestore/lite"
 
-const API_KEY = process.env.REACT_APP_FIREBASE_API_KEY
+const API_KEY = import.meta.env.VITE_FIREBASE_API_KEY;
+console.log("🚀 ~ file: config.js:5 ~ API_KEY", API_KEY)
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app"
